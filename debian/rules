@@ -6,6 +6,12 @@
 # see EXAMPLES in dpkg-buildflags(1) and read /usr/share/dpkg/*
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/default.mk
+include /usr/share/postgresql-common/pgxs_debian_control.mk
+
+# lookup for supported debian versions
+supported_versions := $(shell pg_buildext supported-versions $(CURDIR))
+
+LIBRARY=pg_rage_terminator.so
 
 # see FEATURE AREAS in dpkg-buildflags(1)
 #export DEB_BUILD_MAINT_OPTIONS = hardening=+all
@@ -16,17 +22,27 @@ include /usr/share/dpkg/default.mk
 # package maintainers to append LDFLAGS
 #export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
 
+clean: debian/control prep
+.PHONY: debian/control
+
+.PHONY: prep
+prep:
+	rm -f debian/pg-rage-terminator-?.?.install
+	for v in $(supported_versions); do echo "usr/lib/postgresql/$$v/lib/" > debian/pg-rage-terminator-$$v.install || exit; done
 
 # main packaging script based on dh7 syntax
 %:
-	dh $@ 
+	dh $@
+
+override_dh_auto_build:
+	for v in $(supported_versions); do ( mkdir -p build-$$v/src/backend && ln -s $(CURDIR)/Makefile build-$$v/src/backend/ ) || exit; done
+	for v in $(supported_versions); do $(MAKE) -C build-$$v/src/backend $(LIBRARY) VPATH=$(CURDIR) || exit; done
+
+override_dh_auto_install:
+	for v in $(supported_versions); do install -D $(CURDIR)/build-$$v/src/backend/$(LIBRARY) $(CURDIR)/debian/tmp/usr/lib/postgresql/$$v/lib/$(LIBRARY) || exit; done
 
 # debmake generated override targets
 # This is example for Cmake (See http://bugs.debian.org/641051 )
 #override_dh_auto_configure:
 #	dh_auto_configure -- \
 #	-DCMAKE_LIBRARY_PATH=$(DEB_HOST_MULTIARCH)
-
-
-
-
