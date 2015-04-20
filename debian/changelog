@@ -1,0 +1,5 @@
+pg-rage-terminator (0.1.1-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Adrian Vondendriesch <discostu@hibbert.zoozer.local>  Mon, 20 Apr 2015 19:42:58 +0200
