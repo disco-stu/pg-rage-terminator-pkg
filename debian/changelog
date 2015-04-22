@@ -1,3 +1,10 @@
+pg-rage-terminator (0.1.2-1) UNRELEASED; urgency=medium
+
+  * New upstream release
+  * Correct VCS-Git and VCS-Browser.
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Wed, 22 Apr 2015 13:36:22 +0200
+
 pg-rage-terminator (0.1.1-1) unstable; urgency=low
 
   * Initial release
