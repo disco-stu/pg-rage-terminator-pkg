@@ -1,7 +1,8 @@
-pg-rage-terminator (0.1.2-1) UNRELEASED; urgency=medium
+pg-rage-terminator (0.1.2-1) unstable; urgency=medium
 
   * New upstream release
   * Correct VCS-Git and VCS-Browser.
+  * Remove postgresql-9.3 binary
 
  -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Wed, 22 Apr 2015 13:36:22 +0200
 
