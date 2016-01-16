@@ -1,6 +1,7 @@
 pg-rage-terminator (0.1.4-2) UNRELEASED; urgency=medium
 
   * Upload with 9.5 support.
+  * Add debian/tests/smoketest.
 
  -- Christoph Berg <myon@debian.org>  Sat, 16 Jan 2016 08:46:24 +0100
 

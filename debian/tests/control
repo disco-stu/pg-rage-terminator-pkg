@@ -1,0 +1,3 @@
+Depends: @, postgresql-server-dev-all
+Tests: smoketest
+Restrictions: allow-stderr
