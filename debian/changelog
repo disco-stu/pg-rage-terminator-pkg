@@ -1,3 +1,9 @@
+pg-rage-terminator (0.1.4-3) unstable; urgency=medium
+
+  * Upload with 9.6 support.
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Fri, 30 Sep 2016 11:07:27 +0200
+
 pg-rage-terminator (0.1.4-2) unstable; urgency=medium
 
   [ Christoph Berg ]
