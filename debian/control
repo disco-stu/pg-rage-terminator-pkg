@@ -10,12 +10,12 @@ Homepage: https://github.com/disco-stu/pg_rage_terminator
 Vcs-Git: https://github.com/disco-stu/pg-rage-terminator-pkg.git
 Vcs-Browser: https://github.com/disco-stu/pg-rage-terminator-pkg
 
-Package: pg-rage-terminator-9.5
+Package: pg-rage-terminator-9.6
 Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- postgresql-9.5
+ postgresql-9.6
 Description: PostgreSQL background worker that kill random sessions.
  pg-rage-terminator is a custom background worker which is able to kill random
  PostgreSQL backends.
