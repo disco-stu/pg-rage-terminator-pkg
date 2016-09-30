@@ -1,6 +1,7 @@
 pg-rage-terminator (0.1.4-3) unstable; urgency=medium
 
   * Upload with 9.6 support.
+  * Bump Standards-Version to 3.9.8.
 
  -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Fri, 30 Sep 2016 11:07:27 +0200
 
