@@ -1,3 +1,11 @@
+pg-rage-terminator (0.1.5-1) UNRELEASED; urgency=medium
+
+  * New upstream version.
+    - Bugfix in kill query.
+    - Support for PostgreSQL 10
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Mon, 11 Sep 2017 15:12:01 +0200
+
 pg-rage-terminator (0.1.4-3) unstable; urgency=medium
 
   * Upload with 9.6 support.
