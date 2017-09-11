@@ -1,4 +1,4 @@
-pg-rage-terminator (0.1.5-1) UNRELEASED; urgency=medium
+pg-rage-terminator (0.1.5-1) unstable; urgency=medium
 
   * New upstream version.
     - Bugfix in kill query.
