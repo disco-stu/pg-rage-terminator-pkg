@@ -1,3 +1,12 @@
+pg-rage-terminator (0.1.6-1) unstable; urgency=medium
+
+  * New upstream version.
+    - Bugfix for PostgreSQL 9.4.
+    - Drop support for PostgreSQL 9.3.
+  * Bump Standards-Version to 4.1.0.
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Wed, 27 Sep 2017 18:08:40 +0200
+
 pg-rage-terminator (0.1.5-1) unstable; urgency=medium
 
   * New upstream version.
