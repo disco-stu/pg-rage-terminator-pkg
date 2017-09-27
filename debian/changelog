@@ -1,3 +1,9 @@
+pg-rage-terminator (0.1.6-2) unstable; urgency=medium
+
+  * Upload with PostgreSQL 10 support.
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Wed, 27 Sep 2017 21:23:02 +0200
+
 pg-rage-terminator (0.1.6-1) unstable; urgency=medium
 
   * New upstream version.
