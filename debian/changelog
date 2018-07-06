@@ -1,3 +1,9 @@
+pg-rage-terminator (0.1.7-1) unstable; urgency=medium
+
+  * Upload with PostgreSQL 11 support.
+
+ -- Adrian Vondendriesch <adrian.vondendriesch@credativ.de>  Fri, 06 Jul 2018 18:04:27 +0200
+
 pg-rage-terminator (0.1.6-2) unstable; urgency=medium
 
   * Upload with PostgreSQL 10 support.
