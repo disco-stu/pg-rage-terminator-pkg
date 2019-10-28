@@ -1,3 +1,9 @@
+pg-rage-terminator (0.1.7-3) UNRELEASED; urgency=medium
+
+  * debian/tests/smoketest: Actually fail on errors.
+
+ -- Christoph Berg <myon@debian.org>  Mon, 28 Oct 2019 13:44:06 +0100
+
 pg-rage-terminator (0.1.7-2) unstable; urgency=medium
 
   * Team upload for PostgreSQL 11.
