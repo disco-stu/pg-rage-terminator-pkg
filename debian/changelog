@@ -1,3 +1,9 @@
+pg-rage-terminator (0.1.7-4) UNRELEASED; urgency=medium
+
+  * Use secure copyright file specification URI.
+
+ -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 22:50:11 +0000
+
 pg-rage-terminator (0.1.7-3) unstable; urgency=medium
 
   * Team upload for PostgreSQL 12.
