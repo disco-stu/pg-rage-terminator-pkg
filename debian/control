@@ -3,9 +3,9 @@ Section: database
 Priority: optional
 Maintainer: Adrian Vondendriesch <adrian.vondendriesch@credativ.de>
 Build-Depends:
- debhelper (>= 9),
+ debhelper-compat (= 12),
  postgresql-server-dev-all
-Standards-Version: 4.1.0
+Standards-Version: 4.1.1
 Homepage: https://github.com/disco-stu/pg_rage_terminator
 Vcs-Git: https://github.com/disco-stu/pg-rage-terminator-pkg.git
 Vcs-Browser: https://github.com/disco-stu/pg-rage-terminator-pkg
