@@ -1,5 +1,8 @@
-pg-rage-terminator (0.1.7-4) UNRELEASED; urgency=medium
+pg-rage-terminator (0.1.7-4) unstable; urgency=medium
 
+  * Team upload for PostgreSQL 13.
+
+  [ Debian Janitor ]
   * Use secure copyright file specification URI.
   * Bump debhelper from deprecated 9 to 12.
   * Set debhelper-compat version in Build-Depends.
@@ -7,7 +10,13 @@ pg-rage-terminator (0.1.7-4) UNRELEASED; urgency=medium
     Repository-Browse.
   * Update standards version to 4.1.1, no changes needed.
 
- -- Debian Janitor <janitor@jelmer.uk>  Tue, 28 Apr 2020 22:50:11 +0000
+  [ Christoph Berg ]
+  * Use dh --with pgxs and run tests at build-time as well.
+  * DH 13.
+  * debian/tests: Drop dependency on postgresql-server-dev-all.
+  * debian/tests: Use "pg_buildext virtualenv".
+
+ -- Christoph Berg <myon@debian.org>  Mon, 05 Oct 2020 14:27:32 +0200
 
 pg-rage-terminator (0.1.7-3) unstable; urgency=medium
 

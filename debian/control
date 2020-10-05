@@ -3,19 +3,19 @@ Section: database
 Priority: optional
 Maintainer: Adrian Vondendriesch <adrian.vondendriesch@credativ.de>
 Build-Depends:
- debhelper-compat (= 12),
- postgresql-server-dev-all
-Standards-Version: 4.1.1
+ debhelper-compat (= 13),
+ postgresql-all (>= 219~),
+Standards-Version: 4.5.0
 Homepage: https://github.com/disco-stu/pg_rage_terminator
 Vcs-Git: https://github.com/disco-stu/pg-rage-terminator-pkg.git
 Vcs-Browser: https://github.com/disco-stu/pg-rage-terminator-pkg
 
-Package: pg-rage-terminator-12
+Package: pg-rage-terminator-13
 Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
- postgresql-12
+ postgresql-13
 Description: PostgreSQL background worker that kill random sessions.
  pg-rage-terminator is a custom background worker which is able to kill random
  PostgreSQL backends.

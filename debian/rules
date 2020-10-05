@@ -1,21 +1,15 @@
 #!/usr/bin/make -f
 
-include /usr/share/postgresql-common/pgxs_debian_control.mk
-
-override_dh_auto_build:
-	 +pg_buildext build build-%v
-
-override_dh_auto_test:
-	 # nothing to do here, see debian/tests/* instead
-
-override_dh_auto_install:
-	 +pg_buildext install build-%v pg-rage-terminator-%v
-
 override_dh_installdocs:
 	 dh_installdocs --all README.*
 
-override_dh_auto_clean:
-	 +pg_buildext clean build-%v
+override_dh_pgxs_test:
+	echo "psql -Xc 'SELECT pg_sleep(3)' 2>&1 | grep 'FATAL:  terminating connection due to administrator command'" | \
+	LANG=C.UTF-8 pg_buildext \
+		-o "shared_preload_libraries=pg_rage_terminator" \
+		-o "pg_rage_terminator.chance=100" \
+		-o "pg_rage_terminator.interval=1" \
+		virtualenv . . pg-rage-terminator-%v
 
 %:
-	 dh $@
+	 dh $@ --with pgxs

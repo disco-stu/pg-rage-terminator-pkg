@@ -4,11 +4,11 @@ set -e
 
 export LC_ALL=C
 
-for v in $(pg_buildext supported-versions); do
-	pg_virtualenv -v $v \
-		-o "shared_preload_libraries=pg_rage_terminator" \
-		-o "pg_rage_terminator.chance=100" \
-		-o "pg_rage_terminator.interval=1" \
-		psql -c 'SELECT pg_sleep(3)' 2>&1 | \
+pg_buildext \
+	-o "shared_preload_libraries=pg_rage_terminator" \
+	-o "pg_rage_terminator.chance=100" \
+	-o "pg_rage_terminator.interval=1" \
+	virtualenv <<EOF
+		psql -Xc 'SELECT pg_sleep(3)' 2>&1 | \
 			grep 'FATAL:  terminating connection due to administrator command'
-done
+EOF
