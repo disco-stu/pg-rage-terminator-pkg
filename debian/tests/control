@@ -1,3 +1,3 @@
-Depends: @
+Depends: @, postgresql-common (>= 219~)
 Tests: smoketest
 Restrictions: allow-stderr

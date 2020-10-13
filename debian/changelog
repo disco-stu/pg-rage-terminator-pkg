@@ -1,3 +1,12 @@
+pg-rage-terminator (0.1.7-5) unstable; urgency=medium
+
+  * Team upload.
+  * R³: no.
+  * Add test-dependency on postgresql-common (>= 219~) for pg_buildext
+    virtualenv.
+
+ -- Christoph Berg <myon@debian.org>  Tue, 13 Oct 2020 13:36:30 +0200
+
 pg-rage-terminator (0.1.7-4) unstable; urgency=medium
 
   * Team upload for PostgreSQL 13.
