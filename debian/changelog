@@ -1,3 +1,10 @@
+pg-rage-terminator (0.1.7-8) unstable; urgency=medium
+
+  * Team upload.
+  * PG16: Mark pg_rage_terminator_main for export.
+
+ -- Christoph Berg <myon@debian.org>  Sat, 29 Jul 2023 14:53:22 +0200
+
 pg-rage-terminator (0.1.7-7) unstable; urgency=medium
 
   * Team upload for PostgreSQL 15.
