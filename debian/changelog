@@ -1,3 +1,11 @@
+pg-rage-terminator (0.1.7-10) unstable; urgency=medium
+
+  * Team upload for PostgreSQL 17.
+  * Restrict to 64-bit architectures.
+  * Mark postgresql-all as <!nocheck>.
+
+ -- Christoph Berg <myon@debian.org>  Fri, 13 Sep 2024 21:49:59 +0200
+
 pg-rage-terminator (0.1.7-9) unstable; urgency=medium
 
   * Team upload.
