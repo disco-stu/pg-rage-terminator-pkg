@@ -1,3 +1,9 @@
+pg-rage-terminator (0.1.7-11) unstable; urgency=medium
+
+  * Team upload with PostgreSQL 18 support.
+
+ -- Christoph Berg <myon@debian.org>  Sun, 04 May 2025 15:28:25 +0200
+
 pg-rage-terminator (0.1.7-10) unstable; urgency=medium
 
   * Team upload for PostgreSQL 17.
