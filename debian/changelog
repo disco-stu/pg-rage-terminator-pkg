@@ -1,3 +1,11 @@
+pg-rage-terminator (0.1.7-12) unstable; urgency=medium
+
+  * Upload for PostgreSQL 18. (Closes: #1117283)
+  * Add ${postgresql:Breaks}.
+  * Test-Depend on postgresql-common-dev.
+
+ -- Christoph Berg <myon@debian.org>  Wed, 08 Oct 2025 16:27:47 +0200
+
 pg-rage-terminator (0.1.7-11) unstable; urgency=medium
 
   * Team upload with PostgreSQL 18 support.
